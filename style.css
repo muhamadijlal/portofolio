@@ -1,0 +1,459 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Questrial', sans-serif;
+  background-color: white;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  background-color: #E9ECEF;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+ul.list-menu  {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.list-menu li {
+  list-style: none;
+}
+
+ul.list-menu li a:hover {
+  background-color: #CED4DA;
+  color: #343A40;
+}
+
+ul.list-menu li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ADB5BD;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  padding-top: 9px;
+}
+
+/* Main content */
+.main-content {
+ width: 100%;
+ height: 600px;
+ margin: auto;
+}
+
+.hero {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-areas: "caption image";
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero img {
+  grid-area: image;
+  height: 550px;
+  margin: 50px auto 0 auto;
+}
+
+.hero div.hello {
+  grid-area: caption;
+  padding: 65px 0;
+}
+
+div.hello .title {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+div.hello span.subtitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hello p {
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: justify;
+}
+
+/* Section Gallery */
+.gallery {
+  padding: 25px;
+}
+
+.gallery .title h1 {
+  font-size: 85px;
+  margin-bottom: 25px;
+}
+
+.gallery .row {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery .row .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery .row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.gallery .row .column img:hover {
+  filter: grayscale(0);
+}
+
+.gallery .link-freepik {
+  padding: 15px;
+  width: 80%;
+  margin: 25px auto 0 auto;
+  border: 3px solid #023047;
+  border-radius: 15px;
+  box-shadow: 0 8px 0 #023047;
+  transition: 0.5s;
+  background-color: #ffd60a;
+}
+
+.gallery .link-freepik:hover {
+  transform: translateY(8px);
+  box-shadow: none;
+}
+
+.gallery .link-freepik a {
+  font-size: 20px;
+  color: #023047;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Skill Section */
+.skill {
+  padding: 25px;
+}
+
+.skill .title h1{
+  font-size: 85px;
+  margin-bottom: 25px;
+}
+
+.skill .content-skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.skill .content-skills img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-size: cover;
+  transition: 0.7s;
+  filter: grayscale(100%);
+}
+
+.skill .content-skills img:hover {
+  filter: grayscale(0);
+  transform: translateY(-25px);
+}
+
+/* Footer Section */
+footer {
+  background-color: #023047;
+}
+
+footer .footer-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  color: white;
+  height: 200px;
+}
+
+footer .footer-content .title {
+  width: 10%;
+  font-size: 18px;
+}
+
+footer .footer-content .about {
+  font-size: 18px;
+  width: 50%;
+  text-align: justify;
+}
+
+footer .footer-content .media-social {
+  width: 20%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-content .media-social a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+   }
+
+   .hero {
+    display: block;
+    width: 100%;
+  }
+  
+  .hero img {
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .hero div.hello {
+    margin-top: 0px;
+    height: 650px;
+    padding: 20px 40px;
+  }
+  
+  div.hello .title {
+    margin-top: 35px;
+    font-size: 90px;
+    font-weight: bolder;
+  }
+  
+  div.hello span.subtitle {
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  div.hello p {
+    margin-top: 30px;
+    text-align: justify;
+  }
+
+  /* Gallery Section Phone */
+  .gallery .title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .gallery .row {
+    width: 100%;
+  }
+
+  .gallery .row .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .gallery .row .column img.half {
+    width: 49.4%;
+  }
+
+  .gallery .link-freepik {
+    width: 100%;
+  }
+
+  /* Skill Section phone */
+  
+  .skill .title h1{
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .skill .content-skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .skill .content-skills img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+
+  /* Footer Section */
+footer {
+  background-color: #023047;
+}
+
+footer .footer-content {
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  margin: auto;
+}
+
+footer .footer-content .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+footer .footer-content .about {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+footer .footer-content .media-social {
+  width: 100%;
+  font-size: 18px;
+  justify-content: space-around;
+}
+
+footer .footer-content .media-social a {
+  text-decoration: none;
+  color: white;
+}
+}
+
+/* Tablet */
+@media only screen and (min-width:501px) and (max-width: 900px) {
+  ul.list-menu {
+    width: 60%;
+  }
+
+  /* Main content  */
+  .main-content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-areas: "caption image";
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  
+  .hero img {
+    grid-area: image;
+    min-width: 300px;
+    max-width: 80%;
+    object-position: center bottom;
+  }
+  
+  .hero div.hello {
+    margin-top: 0;
+    grid-area: caption;
+    min-width: 100%;
+    padding: 40px;
+  }
+  
+  div.hello .title {
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+  
+  div.hello span.subtitle {
+    display: block;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .hello p {
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: justify;
+  }
+
+  /* Gallery Section Tablet */
+  .gallery .row {
+    width: 100%;
+  }
+
+  .gallery .link-freepik {
+    width: 100%;
+  }
+
+  /* Skill Section */
+.skill {
+  padding: 25px;
+}
+
+.skill .title h1{
+  font-size: 85px;
+  margin-bottom: 25px;
+}
+
+.skill .content-skills {
+  width: 100%;
+}
+
+.skill .content-skills img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #023047;
+}
+
+footer .footer-content {
+  width: 100%;
+  padding: 25px;
+  color: white;
+}
+
+footer .footer-content .about {
+  font-size: 18px;
+  text-align: justify;
+}
+
+footer .footer-content .media-social {
+  font-size: 16px;
+}
+}
