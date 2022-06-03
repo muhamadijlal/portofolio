@@ -250,7 +250,7 @@ footer .footer-content .media-social a {
     margin-top: 25px;
     height: 350px;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto 25px auto;
   }
   
   .hero div.hello {
@@ -279,7 +279,7 @@ footer .footer-content .media-social a {
 
   /* Gallery Section Phone */
   .gallery .title h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
     text-align: center;
   }
 
